@@ -1,6 +1,9 @@
 # pedestrian-bike-data
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
+It is a data set with 35 features. The purpose of data exploration in workflow is to identify key features how their relationships with other features within the data set to discover ways to construct (predictive) modeling and make inference. In other words, it helps inform us about how to create models when we are not yet familiar with how variables relate to each other -- EDA allows us to pick apart the data set and informs us about what it can tell us and its limitations. 
+
+The 35 columns are listed below -- unfortunately there were no definitions provided in the database.
 
  [1] "Crash.Type"                   
  [2] "Report.Made."                 
