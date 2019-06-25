@@ -1,5 +1,4 @@
-# Pedestrian And Bike Crash Data - Dataset
-# Information gathered in the interest of public safety
+# Pedestrian And Bike Crash Data - Dataset (Public Safety)
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
 The data is .csv format and exported into R for analysis.
