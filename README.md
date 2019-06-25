@@ -55,8 +55,11 @@ We observe approximately two times more pedestrian crashes than bike crashes wit
 
 # How many crash reports did each district respond to?
 
-The data collected is an aggregation of crash reports answered by the police departments in Minnesota. The police departments are identified by districts. A natural question is how many crashes (and of what type of crash) did each district respond.
+The data collected is an aggregation of crash reports answered by the police departments in Minnesota. The police departments are identified by districts. A natural question is what type of crashes and how many of these crashes did each police department investigate?
+
+
 ![Rplot-district-crashes](https://user-images.githubusercontent.com/35606112/60136865-fdafdf80-976a-11e9-8d03-54bf97d75d6c.png)
+
 
 ![Rplot-district-crash-types](https://user-images.githubusercontent.com/35606112/60136970-3f408a80-976b-11e9-8fa7-bd8bff214984.png)
 
@@ -75,17 +78,27 @@ I give my own interpretation to the questions in the following visualizations --
 
 ![Rplot-month-days](https://user-images.githubusercontent.com/35606112/60137234-eb827100-976b-11e9-884b-a5f863d528f5.png)
 
+# How do crash types vary of speed limits?
+
+This would have been an interesting question to ask of any data set that has count data for crashes across different speed limits. Unfortunately, most of the data has been recorded for speed limits of 30 mph -- with a few 10mph data points, so the plot is largely uninteresting. However, we can easily imagine an alternate world where there are more varied speed limits (e.g. if we looked at vehicle crash data of cars, trucks, buses, etc. on free-ways and high-ways). The beauty in tidyverse and ggplot is that the code chunk that produces these plots would largely be invariant -- it is just the data set that needs to change for us to see finer features.
+
 ![Rplot-speed](https://user-images.githubusercontent.com/35606112/60137292-0b199980-976c-11e9-81ba-84e8fd13fd6a.png)
+
+# How does age correlate with crash incidences and crash type?
 
 ![Rplot-bikes](https://user-images.githubusercontent.com/35606112/60137311-1c62a600-976c-11e9-971d-837ccb2a5d1b.png)
 
 ![Rplot-drivers](https://user-images.githubusercontent.com/35606112/60137337-33a19380-976c-11e9-865d-e5c74038a45a.png)
 
+# How does gender correlate with crash incidences and crash type?
 ![Rplot-gender](https://user-images.githubusercontent.com/35606112/60137370-4c11ae00-976c-11e9-9d9d-e71a94e38de5.png)
 
 ![Rplot-gender2](https://user-images.githubusercontent.com/35606112/60137407-68ade600-976c-11e9-91f3-12464e4a41f3.png)
 
+# How does a signal being present or omitted reflect on incidences and crash type?
 ![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
+
+# What does the distribution of levels of injuries look like?
 
 ![Rplot-biker-inj](https://user-images.githubusercontent.com/35606112/60137540-d9ed9900-976c-11e9-93d4-f41178b41975.png)
 
