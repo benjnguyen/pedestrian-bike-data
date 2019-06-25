@@ -30,3 +30,6 @@ Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
 
+![Rplot-biker-inj](https://user-images.githubusercontent.com/35606112/60137540-d9ed9900-976c-11e9-93d4-f41178b41975.png)
+
+![Rplot-driverinj](https://user-images.githubusercontent.com/35606112/60137560-e96ce200-976c-11e9-8419-ddc0295a6fab.png)
