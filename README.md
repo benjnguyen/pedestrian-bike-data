@@ -28,7 +28,5 @@ Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-gender2](https://user-images.githubusercontent.com/35606112/60137407-68ade600-976c-11e9-91f3-12464e4a41f3.png)
 
-![Rplot-speed](https://user-images.githubusercontent.com/35606112/60137458-92670d00-976c-11e9-9c7c-effbae819efb.png)
-
-
+![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
 
