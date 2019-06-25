@@ -5,7 +5,7 @@ It is a data set with 35 features. The purpose of data exploration in workflow i
 
 The 35 columns are listed below -- unfortunately there were no definitions provided in the database. Furthermore, there are instances where the data had not been recorded very well, so some aggregation and filtering of entries within the data set needed to occur to produce sparse (using few features) visualizations.
 
-Markup: [heading-1](#heading-1 "Goto heading-1")
+## Column Names
  [1] "Crash.Type"                   
  [2] "Report.Made."                 
  [3] "Date...Time"                  
@@ -42,6 +42,7 @@ Markup: [heading-1](#heading-1 "Goto heading-1")
 [34] "District.Council...Map"       
 [35] "Council.Ward"  
 
+## Questions Posed and Answered
 Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-crash-types](https://user-images.githubusercontent.com/35606112/60136698-80846a80-976a-11e9-8205-619906ee3764.png)
