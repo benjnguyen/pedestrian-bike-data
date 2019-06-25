@@ -45,6 +45,10 @@ The 35 columns are listed below -- unfortunately there were no definitions provi
 ## Questions Posed and Answered
 Some questions that I posed over the data set and attempted to answer were
 
+# How many of each crash type occurred?
+
+The data set partitions the crash types into bike or pedestrian crashes, and a natural question arises about how many of each type occurred. In fact, this question remains relevant for the following questions asked, so this question/answer will be embedded for the remaining sections.
+
 ![Rplot-crash-types](https://user-images.githubusercontent.com/35606112/60136698-80846a80-976a-11e9-8205-619906ee3764.png)
 
 ![Rplot-district-crashes](https://user-images.githubusercontent.com/35606112/60136865-fdafdf80-976a-11e9-8d03-54bf97d75d6c.png)
