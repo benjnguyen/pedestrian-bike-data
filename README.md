@@ -4,12 +4,11 @@ Data exploration over St. Paul publicly available data on pedestrian and bike cr
 
 Some questions that I posed over the data set and attempted to answer were
 
-1. How many crashes occurred for each crash type (where crash types are pedestrian or bike crashes)?
 ![Rplot-crash-types](https://user-images.githubusercontent.com/35606112/60136698-80846a80-976a-11e9-8205-619906ee3764.png)
 
-2. Which (police dept.) districts responded to the crashes and how many did they respond to?
 ![Rplot-district-crashes](https://user-images.githubusercontent.com/35606112/60136865-fdafdf80-976a-11e9-8d03-54bf97d75d6c.png)
-3. How many of each type of crash did each district respond to?
+
+![Rplot-district-crash-types](https://user-images.githubusercontent.com/35606112/60136970-3f408a80-976b-11e9-8fa7-bd8bff214984.png)
 
 4. How do incidents of each type of crash differ across time (answered over years, months, days, and hours)?
 
