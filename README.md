@@ -74,11 +74,19 @@ I give my own interpretation to the questions in the following visualizations --
 
 ![Rplot-years](https://user-images.githubusercontent.com/35606112/60137074-8890da00-976b-11e9-8b81-6aed8b6e9ebe.png)
 
+Here, we can see that crash incidences have been trending downward -- although a limitation here is that the 2019 observation period is currently incomplete.
+
 ![Rplot-month](https://user-images.githubusercontent.com/35606112/60137121-a100f480-976b-11e9-85aa-7112a4ccb40e.png)
+
+Here, we can see that the bulk of crash incidences occur during the summer months. However, it's worth noting that there is an increase in pedestrian crashes during the winter season, which I would conjecture is due to iced-over roads and snow.
 
 ![Rplot-hours](https://user-images.githubusercontent.com/35606112/60137184-d1489300-976b-11e9-8709-894936c65218.png)
 
+Here, we can see that the bulk of crashes occur in the 2:00pm - 7:00pm periods.
+
 ![Rplot-month-days](https://user-images.githubusercontent.com/35606112/60137234-eb827100-976b-11e9-884b-a5f863d528f5.png)
+
+Here, we can see some peaks for certain mm/dd combinations. These dates are likely worth investigating (I looked at them, which can be seen in the .pdf files with code chunks -- I didn't notice anything special about these dates so I attribute these peaks to being random occurrences.)
 
 # How do crash types vary of speed limits?
 
