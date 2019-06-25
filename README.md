@@ -145,4 +145,6 @@ From EDA, I can tentatively say the following:
 
 8. Signals do not have an obvious effect on crash incidents.
 
-These EDA insights are worth studying more in-depth using modelling and predictive techniques, but the purpose here was to work with some EDA techniques using ggplot2 and tidyverse. For insights into how these plots were created, check out the repository! :)
+These EDA insights are worth studying more in-depth using modelling and predictive techniques, but the purpose here was to work with some EDA techniques using ggplot2 and tidyverse. 
+
+For insights into how these plots were created, check out the repository! :)
