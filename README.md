@@ -12,17 +12,20 @@ Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-years](https://user-images.githubusercontent.com/35606112/60137074-8890da00-976b-11e9-8b81-6aed8b6e9ebe.png)
 
-5. How many of each crash type occurred for each speed limit?
 ![Rplot-month](https://user-images.githubusercontent.com/35606112/60137121-a100f480-976b-11e9-85aa-7112a4ccb40e.png)
 
+![Rplot-hours](https://user-images.githubusercontent.com/35606112/60137184-d1489300-976b-11e9-8709-894936c65218.png)
 
-6. How are ages associated with crash counts and types?
+![Rplot-month-days](https://user-images.githubusercontent.com/35606112/60137234-eb827100-976b-11e9-884b-a5f863d528f5.png)
 
-7. How are genders associated with crash counts and types?
+![Rplot-speed](https://user-images.githubusercontent.com/35606112/60137292-0b199980-976c-11e9-81ba-84e8fd13fd6a.png)
 
-8. Are there areas where accidents are generally more clustered?
+![Rplot-bikes](https://user-images.githubusercontent.com/35606112/60137311-1c62a600-976c-11e9-971d-837ccb2a5d1b.png)
 
-9. Does a signal being present have an effect on crash incidents?
+![Rplot-drivers](https://user-images.githubusercontent.com/35606112/60137337-33a19380-976c-11e9-865d-e5c74038a45a.png)
 
-10. What type of crash incident is associated with more severe injuries?
+![Rplot-gender](https://user-images.githubusercontent.com/35606112/60137370-4c11ae00-976c-11e9-9d9d-e71a94e38de5.png)
+
+![Rplot-gender2](https://user-images.githubusercontent.com/35606112/60137407-68ade600-976c-11e9-91f3-12464e4a41f3.png)
+
 
