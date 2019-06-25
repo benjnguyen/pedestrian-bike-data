@@ -1,15 +1,14 @@
 # Pedestrian And Bike Crash Data - Dataset (Public Safety)
-# Data Description
+
+# Data Source and Description
 This data was provided by the St. Paul Police Department and contains all available information relating to bike and pedestrian crashes in St. Paul. As part of its commitment to improving pedestrian and bike safety, the city of St. Paul began aggressively tracking bike and pedestrian crashes in 2016. Data comes from traditional sources such as the State of MN Police Crash Report System and police reports. It also comes from social media, community conversations, police calls (911 and non-emergency) where no report was made, and other non-traditional ways to verify that a crash occurred. By collecting this level of detail for every pedestrian and bike crash in St. Paul, we are hoping to find patterns and answers to help us reach our goal of reducing the number of crashes and improving safety for all residents and visitors of St. Paul.
 
 For more information, please visit the city of Saint Paul's website: https://www.stpaul.gov/departments/police/pedestrian-and-bike-crash-data-city-st-paul
 
-Updated
-April 3, 2019 (Last Update to Dataset)
-Data Provided by
-Saint Paul Police Department
+Last Update to Data Set: April 3, 2019 
+Data Provided by: Saint Paul Police Department
 
-# Data Exploration
+# Data Exploration and Data Visualization using Tidyverse
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
 The data is .csv format and exported into R for analysis.
