@@ -63,6 +63,8 @@ The data collected is an aggregation of crash reports answered by the police dep
 
 ![Rplot-district-crash-types](https://user-images.githubusercontent.com/35606112/60136970-3f408a80-976b-11e9-8fa7-bd8bff214984.png)
 
+Here, we see that Western, Central, and Eastern districts take most of the bulk of crash reports, with most reports being pedestrian-type crashes.
+
 # How do crash reports change over time?
 
 The data collected contains time data of substantial granularity. We have data in the format of mm/dd/yyyy and hh:mm:ss.
