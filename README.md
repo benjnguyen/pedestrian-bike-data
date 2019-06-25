@@ -54,8 +54,6 @@ It is a data set with 35 features; the names of the columns are listed below -- 
 [35] "Council.Ward"  
 
 ## Questions Posed and Answered
-Some questions that I posed over the data set and attempted to answer were
-
 # How many of each crash type occurred?
 
 The data set partitions the crash types into bike or pedestrian crashes, and a natural question arises about how many of each type occurred. In fact, this question remains relevant for the following questions asked, so this question/answer will be embedded for the remaining sections.
