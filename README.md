@@ -6,6 +6,7 @@ This data was provided by the St. Paul Police Department and contains all availa
 For more information, please visit the city of Saint Paul's website: https://www.stpaul.gov/departments/police/pedestrian-and-bike-crash-data-city-st-paul
 
 Last Update to Data Set: April 3, 2019 
+
 Data Provided by: Saint Paul Police Department
 
 # Data Exploration and Data Visualization using Tidyverse
