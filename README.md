@@ -10,7 +10,7 @@ Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-district-crash-types](https://user-images.githubusercontent.com/35606112/60136970-3f408a80-976b-11e9-8fa7-bd8bff214984.png)
 
-4. How do incidents of each type of crash differ across time (answered over years, months, days, and hours)?
+![Rplot-years](https://user-images.githubusercontent.com/35606112/60137074-8890da00-976b-11e9-8b81-6aed8b6e9ebe.png)
 
 5. How many of each crash type occurred for each speed limit?
 
