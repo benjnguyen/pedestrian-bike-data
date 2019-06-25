@@ -1,6 +1,7 @@
 # pedestrian-bike-data
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
+The data is .csv format and exported into R for analysis.
 
 It is a data set with 35 features; the names of the columns are listed below -- unfortunately there were no feature definitions provided in the database description. Furthermore, there are instances where the data had not been recorded very well, so some aggregation and filtering of entries within the data set needed to occur to produce easy to understand, sparse (using few features) visualizations.
 
