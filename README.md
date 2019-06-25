@@ -117,6 +117,8 @@ This question is particularly interesting because it allows us to pose the quest
 
 ![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
 
+As we can see, it's hard to see whether there is a significant difference -- a preliminary gesture would be to test the hypothesis that the presence of a signal has no effect. A limitation in this data set is that some most of the entries were (Yes -- present signal) or (No -- no signal). Some entries recorded the type of signal, which I think would have been the best way to take the measurement (as opposed to a binary response). In particular, having both the binary response and the indetifying response would have been wonderful here, but I make do with what I received.
+
 # What does the distribution of levels of injuries look like?
 
 This question is also interesting from a modelling perspective -- once we have data that bins the types of injuries into categories and we have count data for it, we can formulate questions such as "if a police officer were investigating a crash report, what is the likelihood that the injury sustained by the invovled parties is non-serious, serious, fatal, etc.?
