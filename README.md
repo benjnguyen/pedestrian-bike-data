@@ -124,3 +124,25 @@ This question is also interesting from a modelling perspective -- once we have d
 ![Rplot-biker-inj](https://user-images.githubusercontent.com/35606112/60137540-d9ed9900-976c-11e9-93d4-f41178b41975.png)
 
 ![Rplot-driverinj](https://user-images.githubusercontent.com/35606112/60137560-e96ce200-976c-11e9-8419-ddc0295a6fab.png)
+
+# Summary of EDA
+
+From EDA, I can tentatively say the following:
+
+1. More pedestrian crashes occur than bike crashes.
+
+2. Most crashes occur under jurisdictions of the Western, Central, and Eastern Districts.
+
+3. By year, crashes have been trending downward.
+
+4. By month, crashes tend to occur more frequently in the summer season.
+
+5. By hour, the 2:00pm - 7:00pm time slot seems to have the most frequent incidents of crashes.
+
+6. Younger bikers and drivers tend to get more involved in crashes.
+
+7. Males are associated with higher crash incidents.
+
+8. Signals do not have an obvious effect on crash incidents.
+
+These EDA insights are worth studying more in-depth using modelling and predictive techniques, but the purpose here was to work with some EDA techniques using ggplot2 and tidyverse. For insights into how these plots were created, check out the repository! :)
