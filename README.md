@@ -126,7 +126,7 @@ This question is also interesting from a modelling perspective -- once we have d
 
 # Summary of EDA
 
-From EDA, I can tentatively say the following:
+From EDA, I can tentatively (i.e.. *not definitively*) say the following:
 
 1. More pedestrian crashes occur than bike crashes.
 
