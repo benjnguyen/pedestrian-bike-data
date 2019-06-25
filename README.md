@@ -98,14 +98,22 @@ Unfortunately, as I previously mentioned, there is no data definitions so I cann
 The distributions appear bimodal, with most of the points aggregating around more youthful ages (around ~age 25).
 
 # How does gender correlate with crash incidences and crash type?
+
+The data contains information about the gender of the people involved in the crashes -- for the same reason I investigated age, I would like to investigate gender. To be honest, it's just a lot of fun investigating these multi-variate distributions -- as you can tell, I've plotted many of them!
+
 ![Rplot-gender](https://user-images.githubusercontent.com/35606112/60137370-4c11ae00-976c-11e9-9d9d-e71a94e38de5.png)
 
 ![Rplot-gender2](https://user-images.githubusercontent.com/35606112/60137407-68ade600-976c-11e9-91f3-12464e4a41f3.png)
 
 # How does a signal being present or omitted reflect on incidences and crash type?
+
+This question is particularly interesting because it allows us to pose the question of whether or not a signal being present has an effect on crash rates and crash types. Of course, that is more of a modelling question -- but you can easily see how EDA can help us pose great hypotheses and gives us insight into what type of modelling we would like to do to answer these hypotheses.
+
 ![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
 
 # What does the distribution of levels of injuries look like?
+
+This question is also interesting from a modelling perspective -- once we have data that bins the types of injuries into categories and we have count data for it, we can formulate questions such as "if a police officer were investigating a crash report, what is the likelihood that the injury sustained by the invovled parties is non-serious, serious, fatal, etc.?
 
 ![Rplot-biker-inj](https://user-images.githubusercontent.com/35606112/60137540-d9ed9900-976c-11e9-93d4-f41178b41975.png)
 
