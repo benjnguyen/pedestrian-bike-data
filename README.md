@@ -105,6 +105,12 @@ The data contains information about the gender of the people involved in the cra
 
 ![Rplot-gender2](https://user-images.githubusercontent.com/35606112/60137407-68ade600-976c-11e9-91f3-12464e4a41f3.png)
 
+Interestingly enough, we see that males are often times more invovled in crashes than females. However, I would argue that there is a latent variable, i.e. there is a limitation to the data set that might inadvertantly lead us to this proposed hypothesis that males are more at risk than females.
+
+The limitation here is the number of miles driven by each gender. A preliminary google search suggests that males drive many more miles than females. It would be very important to investigate a model where we have genders (males, females) with the number of miles driven for each gender nested under each gender. In this hierarchical model framework, we can see what truly carries the potentially (statisitcally and practically) significant effects on crash rates -- is it the gender or is it the miles driven?!
+
+At any rate, it is always good to pose the question of whether or not there is an omitted variable in the data set -- and thus a limitation to the answers posed to questions you may want to ask.
+
 # How does a signal being present or omitted reflect on incidences and crash type?
 
 This question is particularly interesting because it allows us to pose the question of whether or not a signal being present has an effect on crash rates and crash types. Of course, that is more of a modelling question -- but you can easily see how EDA can help us pose great hypotheses and gives us insight into what type of modelling we would like to do to answer these hypotheses.
