@@ -4,13 +4,13 @@ Data exploration over St. Paul publicly available data on pedestrian and bike cr
 
 Some questions that I posed over the data set and attempted to answer were
 
-1. How many crashes occurred for each crash type?
+1. How many crashes occurred for each crash type (where crash types are pedestrian or bike crashes)?
 
 2. Which (police dept.) districts responded to the crashes and how many did they respond to?
 
 3. How many of each type of crash did each district respond to?
 
-4. How do incidents of each type of crash differ across time?
+4. How do incidents of each type of crash differ across time (answered over years, months, days, and hours)?
 
 5. How many of each crash type occurred for each speed limit?
 
