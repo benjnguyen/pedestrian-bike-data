@@ -13,6 +13,8 @@ Some questions that I posed over the data set and attempted to answer were
 ![Rplot-years](https://user-images.githubusercontent.com/35606112/60137074-8890da00-976b-11e9-8b81-6aed8b6e9ebe.png)
 
 5. How many of each crash type occurred for each speed limit?
+![Rplot-month](https://user-images.githubusercontent.com/35606112/60137121-a100f480-976b-11e9-85aa-7112a4ccb40e.png)
+
 
 6. How are ages associated with crash counts and types?
 
