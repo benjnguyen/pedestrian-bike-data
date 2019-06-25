@@ -53,8 +53,8 @@ It is a data set with 35 features; the names of the columns are listed below -- 
 [34] "District.Council...Map"       
 [35] "Council.Ward"  
 
-## Questions Posed and Answered
-# How many of each crash type occurred?
+# Questions Posed and Answered
+## How many of each crash type occurred?
 
 The data set partitions the crash types into bike or pedestrian crashes, and a natural question arises about how many of each type occurred. In fact, this question remains relevant for the following questions asked, so this question/answer will be embedded for the remaining sections.
 
@@ -62,7 +62,7 @@ The data set partitions the crash types into bike or pedestrian crashes, and a n
 
 We observe approximately two times more pedestrian crashes than bike crashes within the observational period of January 2016 - April 2019. In hindsight, that should have been a subtitle in the graph.
 
-# How many crash reports did each district respond to?
+## How many crash reports did each district respond to?
 
 The data collected is an aggregation of crash reports answered by the police departments in Minnesota. The police departments are identified by districts. A natural question is what type of crashes and how many of these crashes did each police department investigate?
 
@@ -74,7 +74,7 @@ The data collected is an aggregation of crash reports answered by the police dep
 
 Here, we see that Western, Central, and Eastern districts take most of the bulk of crash reports, with most reports being pedestrian-type crashes.
 
-# How do crash reports change over time?
+## How do crash reports change over time?
 
 The data collected contains time data of substantial granularity. We have data in the format of mm/dd/yyyy and hh:mm:ss.
 This question is often a relevant in the context of time series analysis -- the choice of periodicity to examine can matter depending on how much information we want to see (e.g. whether there is cyclical patterns).
@@ -97,13 +97,13 @@ Here, we can see that the bulk of crashes occur in the 2:00pm - 7:00pm periods.
 
 Here, we can see some peaks for certain mm/dd combinations. These dates are likely worth investigating (I looked at them, which can be seen in the .pdf files with code chunks -- I didn't notice anything special about these dates so I attribute these peaks to being random occurrences.)
 
-# How do crash types vary of speed limits?
+## How do crash types vary of speed limits?
 
 This would have been an interesting question to ask of any data set that has count data for crashes across different speed limits. Unfortunately, most of the data has been recorded for speed limits of 30 mph -- with a few 10mph data points, so the plot is largely uninteresting. However, we can easily imagine an alternate world where there are more varied speed limits (e.g. if we looked at vehicle crash data of cars, trucks, buses, etc. on free-ways and high-ways). The beauty in tidyverse and ggplot is that the code chunk that produces these plots would largely be invariant -- it is just the data set that needs to change for us to see finer features.
 
 ![Rplot-speed](https://user-images.githubusercontent.com/35606112/60137292-0b199980-976c-11e9-81ba-84e8fd13fd6a.png)
 
-# How does age correlate with crash incidences and crash type?
+## How does age correlate with crash incidences and crash type?
 
 The data collected also contained ages associated with the people involved in these crashes. An interesting distinction here (and in the following visualizations) is that bike crashes do not contain driver crashes, but driver crashes may contain bike crashes. 
 
@@ -116,7 +116,7 @@ Unfortunately, as I previously mentioned, there is no data definitions so I cann
 
 The distributions appear bimodal, with most of the points aggregating around more youthful ages (around ~age 25).
 
-# How does gender correlate with crash incidences and crash type?
+## How does gender correlate with crash incidences and crash type?
 
 The data contains information about the gender of the people involved in the crashes -- for the same reason I investigated age, I would like to investigate gender. To be honest, it's just a lot of fun investigating these multi-variate distributions -- as you can tell, I've plotted many of them!
 
@@ -130,7 +130,7 @@ The limitation here is the number of miles driven by each gender. A preliminary 
 
 At any rate, it is always good to pose the question of whether or not there is an omitted variable in the data set -- and thus a limitation to the answers posed to questions you may want to ask.
 
-# How does a signal being present or omitted reflect on incidences and crash type?
+## How does a signal being present or omitted reflect on incidences and crash type?
 
 This question is particularly interesting because it allows us to pose the question of whether or not a signal being present has an effect on crash rates and crash types. Of course, that is more of a modelling question -- but you can easily see how EDA can help us pose great hypotheses and gives us insight into what type of modelling we would like to do to answer these hypotheses.
 
@@ -138,7 +138,7 @@ This question is particularly interesting because it allows us to pose the quest
 
 As we can see, it's hard to see whether there is a significant difference -- a preliminary gesture would be to test the hypothesis that the presence of a signal has no effect. A limitation in this data set is that some most of the entries were (Yes -- present signal) or (No -- no signal). Some entries recorded the type of signal, which I think would have been the best way to take the measurement (as opposed to a binary response). In particular, having both the binary response and the indetifying response would have been wonderful here, but I make do with what I received.
 
-# What does the distribution of levels of injuries look like?
+## What does the distribution of levels of injuries look like?
 
 This question is also interesting from a modelling perspective -- once we have data that bins the types of injuries into categories and we have count data for it, we can formulate questions such as "if a police officer were investigating a crash report, what is the likelihood that the injury sustained by the invovled parties is non-serious, serious, fatal, etc.?
 
@@ -172,4 +172,4 @@ For the purposes of public safety, it is interesing to unravel important feature
 
 Since many of these features are outside of the design variable paradigm, it is helpful to give a gentle reminder and bring to attention about potential dangers to at-risk people during opportune times.
 
-For insights into how these plots were created, check out the repository! :)
+* For insights into how these plots were created, check out the repository! :)
