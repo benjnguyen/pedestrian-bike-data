@@ -51,9 +51,21 @@ The data set partitions the crash types into bike or pedestrian crashes, and a n
 
 ![Rplot-crash-types](https://user-images.githubusercontent.com/35606112/60136698-80846a80-976a-11e9-8205-619906ee3764.png)
 
+We observe approximately two times more pedestrian crashes than bike crashes within the observational period of January 2016 - April 2019. In hindsight, that should have been a subtitle in the graph.
+
+# How many crash reports did each district respond to?
+
+The data collected is an aggregation of crash reports answered by the police departments in Minnesota. The police departments are identified by districts. A natural question is how many crashes (and of what type of crash) did each district respond.
 ![Rplot-district-crashes](https://user-images.githubusercontent.com/35606112/60136865-fdafdf80-976a-11e9-8d03-54bf97d75d6c.png)
 
 ![Rplot-district-crash-types](https://user-images.githubusercontent.com/35606112/60136970-3f408a80-976b-11e9-8fa7-bd8bff214984.png)
+
+# How do crash reports change over time?
+
+The data collected contains time data of substantial granularity. We have data in the format of mm/dd/yyyy and hh:mm:ss.
+This question is often a relevant in the context of time series analysis -- the choice of periodicity to examine can matter depending on how much information we want to see (e.g. whether there is cyclical patterns).
+
+I give my own interpretation to the questions in the following visualizations -- looking over the time periods of years, months, hours of the day, and even month-day combinations.
 
 ![Rplot-years](https://user-images.githubusercontent.com/35606112/60137074-8890da00-976b-11e9-8b81-6aed8b6e9ebe.png)
 
