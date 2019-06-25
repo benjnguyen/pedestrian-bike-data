@@ -2,6 +2,42 @@
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
 
+ [1] "Crash.Type"                   
+ [2] "Report.Made."                 
+ [3] "Date...Time"                  
+ [4] "Case.Number"                  
+ [5] "District"                     
+ [6] "Crash.Location"               
+ [7] "Lanes.Of.Traffic"             
+ [8] "Signal.Present."              
+ [9] "Speed.Limit.Of.Road..MPH."    
+[10] "Road.Type"                    
+[11] "Synopsis"                     
+[12] "Ticket.Arrest."               
+[13] "Citation.To"                  
+[14] "Pedestrian.Age"               
+[15] "Pedestrian.Gender"            
+[16] "Pedestrian.City.Of.Residence" 
+[17] "Pedestrian.Zip.Code"          
+[18] "Biker.Age"                    
+[19] "Biker.Gender"                 
+[20] "Biker.City.of.Residence"      
+[21] "Biker.Zip.Code"               
+[22] "Driver.Age"                   
+[23] "Driver.Gender"                
+[24] "Driver.City.Of.Residence"     
+[25] "Driver.Zip.Code"              
+[26] "Injury.to.Pedestrian."        
+[27] "Level.of.Injury.to.Pedestrian"
+[28] "Pedestrian.to.Hospital."      
+[29] "Injury.to.Biker."             
+[30] "Level.of.Injury.to.Biker"     
+[31] "Biker.to.Hospital."           
+[32] "Crash.Lat.Long.Location"      
+[33] "Count"                        
+[34] "District.Council...Map"       
+[35] "Council.Ward"  
+
 Some questions that I posed over the data set and attempted to answer were
 
 ![Rplot-crash-types](https://user-images.githubusercontent.com/35606112/60136698-80846a80-976a-11e9-8205-619906ee3764.png)
