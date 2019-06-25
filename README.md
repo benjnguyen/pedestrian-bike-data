@@ -86,9 +86,16 @@ This would have been an interesting question to ask of any data set that has cou
 
 # How does age correlate with crash incidences and crash type?
 
+The data collected also contained ages associated with the people involved in these crashes. An interesting distinction here (and in the following visualizations) is that bike crashes do not contain driver crashes, but driver crashes may contain bike crashes. 
+
+Unfortunately, as I previously mentioned, there is no data definitions so I cannot identify the exact reason why this is true -- but I can speculate. I believe that the data has been collected for vehicle collisions with bikers and pedestrians, therefore the reports do not document instances of bikers colliding with pedestrians, but it *does* contain age for drivers (for presumably vehicle drivers).
+
+
 ![Rplot-bikes](https://user-images.githubusercontent.com/35606112/60137311-1c62a600-976c-11e9-971d-837ccb2a5d1b.png)
 
 ![Rplot-drivers](https://user-images.githubusercontent.com/35606112/60137337-33a19380-976c-11e9-865d-e5c74038a45a.png)
+
+The distributions appear bimodal, with most of the points aggregating around more youthful ages (around ~age 25).
 
 # How does gender correlate with crash incidences and crash type?
 ![Rplot-gender](https://user-images.githubusercontent.com/35606112/60137370-4c11ae00-976c-11e9-9d9d-e71a94e38de5.png)
