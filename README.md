@@ -14,7 +14,7 @@ This data was provided by the St. Paul Police Department and contains all availa
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages leaflet and shiny.
 Leaflet is a package in R that is comparable to arcGIS. 
 
-* The data contains crash type, longitude, and latitude data. Using these features, I created an interactive dashboard, which can be viewed here:
+* The data contains crash type, longitude, and latitude data. Using these features, I created an interactive dashboard, which can be viewed here at this *intentionally big link*:
 
 #  https://benjnguyen.shinyapps.io/ped-bike-shiny/
 
