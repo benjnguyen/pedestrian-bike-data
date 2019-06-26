@@ -1,0 +1,164 @@
+---
+title: "Primitive Pedestrian and Bike Crash Shiny"
+output: flexdashboard::flex_dashboard
+runtime: shiny
+---
+
+```{r}
+library(flexdashboard)
+library(shiny)
+library(leaflet)
+library(stringr)
+library(tidyverse)
+###############################
+# Global Env.
+######## Limitation; if you can get this to run on a SQL/Json query or using API, it would be best.
+#setwd(dir = "C:/Users/b3nwi/OneDrive/Documents/data-exploration-ped-bike")
+#myData <- read.csv(file = "Pedestrian_And_Bike_Crash_Data_-_Dataset.csv", header = TRUE)
+myData <- read.csv(url("https://raw.githubusercontent.com/benjnguyen/pedestrian-bike-data/master/Pedestrian_And_Bike_Crash_Data_-_Dataset.csv"), header = TRUE)
+# Some locations are empty in the data set
+myData <- myData[-which(myData$Crash.Lat.Long.Location == ''), ]
+dump = myData$Crash.Lat.Long.Location
+myData_Locations <- as.vector(dump[which(dump != "")])
+myData_Locations <- str_match_all(myData_Locations, "(?<=\\().+?(?=\\))")
+myData_Locations <- as.numeric(unlist(str_extract_all(myData_Locations, "[\\.0-9e-]+")))
+myData_LATITUDE <- c()
+myData_LONGITUDE <- c()
+for(i in 1:length(myData_Locations))
+{
+  if (i%%2==1)
+  {
+    myData_LATITUDE[i] <- myData_Locations[i]
+  } else {
+    myData_LONGITUDE[i] <- myData_Locations[i]
+  }
+}
+myData$LATITUTDE <-  myData_LATITUDE[!is.na(myData_LATITUDE)]
+myData$LONGITUDE <- myData_LONGITUDE[!is.na(myData_LONGITUDE)]
+crashes <- c("Pedestrian", "Bike")
+myData <- myData[which(myData$Crash.Type %in% crashes), ]
+bikedata <- myData[which(myData$Crash.Type == 'Bike'), ]
+peddata <- myData[which(myData$Crash.Type == 'Pedestrian'), ]
+#tinyDataMatrix <- myData[sample(x = 1:nrow(myData), size = 100), ]
+
+###############################
+# Choices for crash-type
+type <- c(
+  "All Types" = "",
+  "Pedestrian" = "PEDESTRIAN",
+  "Bike" = "BICYCLE"
+)
+```
+
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+```{r}
+################################
+# UI
+#ui <- fluidPage(
+#  leafletOutput("map"),
+#  p(),
+#  radioButtons("vehicle", "Select crash type", choices = type, selected = "")
+#)
+
+
+fluidPage(
+  helpText("Choose a crash type -- options are 'Bike' or 'Pedestrian'."),
+  helpText("Choose the number of sites to appear on the map."),
+  helpText("Toggle on clusters when number of sites is large to reduce clutter."),
+  uiOutput("help1"),
+  uiOutput("help2"),
+  uiOutput("help3"),
+  radioButtons("vehicle", "Select crash type", choices = type, selected = ""),
+  numericInput("size", "Number of Sites", value = 100),
+  checkboxInput("cluster", "Toggle Cluster", value = FALSE)
+)
+```
+
+
+
+```{r}
+output$help1<-renderUI({
+  if(input$vehicle == ""){
+     helpText("Maximum number of sites is", 
+              nrow(myData), 
+              "for the option 'All Types' \n")
+  }
+})
+
+output$help2<-renderUI({
+  if(input$vehicle == "PEDESTRIAN"){
+    helpText("Maximum number of sites is", 
+             nrow(myData[which(myData$Crash.Type == 'Pedestrian'), ]), 
+             "for the option 'Pedestrian' \n")
+  } 
+})
+
+output$help3<-renderUI({
+  if(input$vehicle == "BICYCLE"){
+     helpText("Maximum number of sites is", 
+              nrow(myData[which(myData$Crash.Type == 'Bike'), ]), 
+              "for the option 'Bike' \n")
+  }
+})
+
+tinyDataMatrix <- reactive({
+  if (input$vehicle == '') 
+  {
+    myData[sample(x = 1:nrow(myData), size = input$size), ]
+  }
+  else if (input$vehicle == 'BICYCLE') 
+  {
+    bikedata[sample(x = 1:nrow(bikedata), size = input$size), ]
+  }
+  else if (input$vehicle == 'PEDESTRIAN') 
+  {
+    peddata[sample(x = 1:nrow(peddata), size = input$size), ]
+  }
+})
+
+#output$tinydf <- renderDataTable({
+#  tinyDataMatrix() %>% 
+#    select(Crash.Type, LONGITUDE, LATITUTDE) %>% 
+#    head(5)
+#})
+
+
+# If cluster is true
+
+output$map <- renderLeaflet({
+  if (input$cluster) {
+  leaflet() %>%
+    addTiles() %>%
+      addMarkers(lng = tinyDataMatrix()$LONGITUDE,
+                 lat = tinyDataMatrix()$LATITUTDE,
+                 popup = tinyDataMatrix()$Crash.Type,
+                 clusterOptions = markerClusterOptions())
+  } else {
+  leaflet() %>%
+    addTiles() %>%
+      addMarkers(lng = tinyDataMatrix()$LONGITUDE,
+                 lat = tinyDataMatrix()$LATITUTDE,
+                 popup = tinyDataMatrix()$Crash.Type)
+  }
+})
+  
+
+```
+
+
+Column
+----------------------------------------
+```{r}
+dataTableOutput("tinydf")
+leafletOutput("map")
+```
+  
+
+### Background
+
+This is a primitive version of an interactive dashboard that plots out crash site incidences of pedestrian and bike crashes. 
+
+This data was provided by the St. Paul Police Department. The number of crash sites recorded at this time is 921; 613 of the crashes are of type 'Pedestrian', 300 are of type 'Bike', and the remaining are miscellaneously recorded values.
+
