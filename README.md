@@ -16,6 +16,8 @@ Leaflet is a package in R that is comparable to arcGIS.
 
 * The data contains crash type, longitude, and latitude data. Using these features, I created an interactive dashboard, which can be viewed here: https://benjnguyen.shinyapps.io/ped-bike-shiny/
 
+The following data visualization and explorations in tidyverse may also be framed within an R shiny web application to allow the audience to plot features against each other, which may be a feature I implement later on.
+
 # Data Exploration and Data Visualization using Tidyverse
 
 Data exploration over St. Paul publicly available data on pedestrian and bike crashes using R packages tidyverse and ggplot2.
