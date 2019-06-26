@@ -18,7 +18,7 @@ Leaflet is a package in R that is comparable to arcGIS.
 
 #  https://benjnguyen.shinyapps.io/ped-bike-shiny/
 
-If I were to make an extension for this application, I would assign unique markers to pedestrians and bike crashes so they may be easily identified on the map. I would also add tabs that show the data set and another tab that would allow the user to select features they would like to plot against each other -- similar to what appears in the following section where I use tidyverse to explore the data set.
+If I were to make an extension for this application, I would assign unique markers to pedestrians and bike crashes so they may be easily identified on the map. I would also add tabs that show the data set and another tab that would allow the user to select features they would like to plot against each other that they observe from the data set tab -- done in a way to create similar visualzations to that appear in the following section.
 
 # Data Exploration and Data Visualization using Tidyverse
 
