@@ -183,4 +183,4 @@ For the purposes of public safety, it is interesing to unravel important feature
 
 Since many of these features are outside of the design variable paradigm, it is helpful to give a gentle reminder and bring to attention about potential dangers to at-risk people during opportune times.
 
-* For insights into how these plots were created, check out the repository! :)
+* For insights into how these plots were created, check out the repository!
