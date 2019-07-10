@@ -147,7 +147,7 @@ This question is particularly interesting because it allows us to pose the quest
 
 ![Rplot-signal](https://user-images.githubusercontent.com/35606112/60137488-ab6fbe00-976c-11e9-9e88-2cebfdbc6b91.png)
 
-As we can see, it's hard to see whether there is a significant difference -- a preliminary gesture would be to test the hypothesis that the presence of a signal has no effect. A limitation in this data set is that some most of the entries were (Yes -- present signal) or (No -- no signal). Some entries recorded the type of signal, which I think would have been the best way to take the measurement (as opposed to a binary response). In particular, having both the binary response and the indetifying response would have been wonderful here, but I make do with what I received.
+As we can see, it's hard to see whether there is a significant difference -- a preliminary gesture would be to test the hypothesis that the presence of a signal has no effect. A limitation in this data set is that most of the entries were (Yes -- present signal) or (No -- no signal). Some entries recorded the type of signal, which I think would have been the best way to take the measurement (as opposed to a binary response). In particular, having both the binary response and the identifying response would have been wonderful here, but I make do with what I received.
 
 ## What does the distribution of levels of injuries look like?
 
